@@ -7,7 +7,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "portfolio_pablo": {
+    "portafolio_pablo": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -57,16 +57,19 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "portfolio_pablo:build:production"
+              "buildTarget": "portafolio_pablo:build:production"
             },
             "development": {
-              "buildTarget": "portfolio_pablo:build:development"
+              "buildTarget": "portafolio_pablo:build:development"
             }
           },
           "defaultConfiguration": "development"
         },
         "test": {
           "builder": "@angular/build:unit-test"
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
