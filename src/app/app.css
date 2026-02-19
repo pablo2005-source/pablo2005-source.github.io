@@ -1,0 +1,7 @@
+/* src/app/app.component.css */
+.main-container {
+  height: 100vh; /* 100% de la altura de la pantalla */
+  width: 100vw;  /* 100% del ancho de la pantalla */
+  display: flex;
+  flex-direction: column;
+}
