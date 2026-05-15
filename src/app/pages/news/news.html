@@ -2,11 +2,13 @@
   <h2>Noticias</h2>
 
   <ng-container *ngIf="!contentHtml; else detail">
-    <ul>
-      <li *ngFor="let item of items">
-        <a (click)="open(item)">{{ item.title }} <small>- {{ item.date }}</small></a>
-      </li>
-    </ul>
+    <div class="news-card" *ngFor="let item of items" (click)="open(item)">
+      <div>
+        <p class="card-title">{{ item.title }}</p>
+        <p class="card-date">{{ item.date }}</p>
+      </div>
+      <span class="arrow">&rsaquo;</span>
+    </div>
     <p *ngIf="items.length === 0" class="empty">No hay noticias. Añade archivos Markdown en <code>src/assets/content/news</code>.</p>
   </ng-container>
 
@@ -14,7 +16,7 @@
     <article class="news-detail">
       <h3>{{ title }}</h3>
       <div [innerHTML]="contentHtml"></div>
-      <p><a routerLink="/noticias">Volver a la lista</a></p>
+      <a class="back-link" routerLink="/noticias">← Volver a la lista</a>
     </article>
   </ng-template>
 </section>

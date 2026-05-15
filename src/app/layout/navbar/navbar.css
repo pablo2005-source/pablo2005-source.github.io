@@ -2,56 +2,75 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 28px;
-  background: rgba(255,255,255,0.9);
-  box-shadow: 0 2px 6px rgba(15,23,42,0.04);
+  padding: 0 40px;
+  height: 64px;
+  background: #fff;
+  border-bottom: 1px solid #e2e8f0;
   position: sticky;
   top: 0;
   z-index: 100;
+  box-shadow: 0 1px 3px rgba(15,23,42,0.06);
 }
 
 .logo {
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 1.05rem;
+  font-weight: 800;
   color: #0f172a;
+  letter-spacing: -0.03em;
 }
 
 .nav-links {
-  list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 4px;
   align-items: center;
 }
 
 .nav-links a {
-  text-decoration: none;
-  color: #334155;
-  font-weight: 600;
-  padding: 8px 12px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #64748b;
+  padding: 7px 16px;
   border-radius: 8px;
+  transition: background 0.15s, color 0.15s;
 }
 
 .nav-links a:hover {
-  background: #eef2ff;
-  color: #1e40af;
-}
-
-/* Mobile */
-.hamburger {
-  display: none;
-  background: transparent;
-  border: none;
-  font-size: 20px;
-}
-
-@media (max-width: 700px) {
-  .hamburger { display: block; }
-  .nav-links { display: none; position: absolute; right: 16px; top: 64px; background: white; padding: 12px; border-radius: 8px; box-shadow: 0 6px 18px rgba(15,23,42,0.08); flex-direction: column; }
-  .nav-links.open { display: flex; }
-  .nav-links li { margin: 6px 0; }
+  background: #f1f5f9;
+  color: #0f172a;
 }
 
 .nav-links a.active {
-  background: #e0e7ff;
-  color: #1e3a8a;
+  background: #eff6ff;
+  color: #1d4ed8;
+  font-weight: 600;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  padding: 4px 8px;
+  color: #334155;
+}
+
+@media (max-width: 700px) {
+  .navbar { padding: 0 20px; }
+  .hamburger { display: block; }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 68px;
+    right: 16px;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(15,23,42,0.12);
+    flex-direction: column;
+    padding: 8px;
+    min-width: 160px;
+  }
+  .nav-links.open { display: flex; }
+  .nav-links a { display: block; border-radius: 8px; padding: 10px 16px; }
 }

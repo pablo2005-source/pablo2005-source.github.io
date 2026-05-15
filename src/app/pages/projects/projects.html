@@ -1,18 +1,22 @@
 <section class="projects">
   <h2>Proyectos</h2>
 
-  <div *ngIf="!content">
-    <ul>
-      <li *ngFor="let item of items">
-        <a (click)="open(item)">{{ item.title }} <small>- {{ item.date }}</small></a>
-      </li>
-    </ul>
-    <p *ngIf="items.length === 0">No hay proyectos. Añade archivos Markdown en <code>src/assets/content/projects</code>.</p>
-  </div>
+  <ng-container *ngIf="!content; else detail">
+    <div class="project-card" *ngFor="let item of items" (click)="open(item)">
+      <div>
+        <p class="card-title">{{ item.title }}</p>
+        <p class="card-date">{{ item.date }}</p>
+      </div>
+      <span class="arrow">&rsaquo;</span>
+    </div>
+    <p *ngIf="items.length === 0" class="empty">No hay proyectos. Añade archivos Markdown en <code>src/assets/content/projects</code>.</p>
+  </ng-container>
 
-  <article *ngIf="content">
-    <h3>{{ title }}</h3>
-    <pre>{{ content }}</pre>
-    <p><a routerLink="/proyectos">Volver a la lista</a></p>
-  </article>
+  <ng-template #detail>
+    <article class="project-detail">
+      <h3>{{ title }}</h3>
+      <pre>{{ content }}</pre>
+      <a class="back-link" routerLink="/proyectos">← Volver a la lista</a>
+    </article>
+  </ng-template>
 </section>
