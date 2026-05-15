@@ -2,3 +2,10 @@
 .news ul { list-style: none; padding: 0; }
 .news li { margin: 0.5rem 0; }
 .news a { cursor: pointer; color: #0b64ff; }
+.news .empty {
+	color: #64748b;
+	background: #f8fafc;
+	padding: 18px;
+	border-radius: 8px;
+	border: 1px dashed #e2e8f0;
+}

@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
 export class ContentService {
   async getIndex(type: 'news' | 'projects') {
     try {
-      const res = await fetch(`/assets/content/${type}/index.json`);
+      const res = await fetch(`assets/content/${type}/index.json`);
       if (!res.ok) return [];
       return await res.json();
     } catch (e) {
@@ -15,7 +15,7 @@ export class ContentService {
 
   async getFile(type: 'news' | 'projects', filename: string) {
     try {
-      const res = await fetch(`/assets/content/${type}/${filename}`);
+      const res = await fetch(`assets/content/${type}/${filename}`);
       if (!res.ok) return '';
       return await res.text();
     } catch (e) {

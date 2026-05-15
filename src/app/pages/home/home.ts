@@ -8,4 +8,6 @@ import { ChangeDetectionStrategy } from '@angular/core';
   styleUrls: ['./home.css'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class Home {}
+export class Home {
+  // cache-bust: 20260515T123600
+}

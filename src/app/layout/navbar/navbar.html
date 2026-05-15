@@ -1,9 +1,11 @@
 <nav class="navbar">
   <div class="logo">MiPortafolio</div>
 
-  <ul class="nav-links">
-    <li><a routerLink="/" href="#/">Home</a></li>
-    <li><a routerLink="/noticias" href="#/noticias">Noticias</a></li>
-    <li><a routerLink="/proyectos" href="#/proyectos">Proyectos</a></li>
+  <button class="hamburger" (click)="toggle()" aria-label="Toggle menu">☰</button>
+
+  <ul class="nav-links" [class.open]="showMenu">
+    <li><a routerLink="/" routerLinkActive="active" (click)="showMenu=false">Home</a></li>
+    <li><a routerLink="/noticias" routerLinkActive="active" (click)="showMenu=false">Noticias</a></li>
+    <li><a routerLink="/proyectos" routerLinkActive="active" (click)="showMenu=false">Proyectos</a></li>
   </ul>
 </nav>

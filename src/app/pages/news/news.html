@@ -1,18 +1,20 @@
 <section class="news">
   <h2>Noticias</h2>
 
-  <div *ngIf="!content">
+  <ng-container *ngIf="!contentHtml; else detail">
     <ul>
       <li *ngFor="let item of items">
         <a (click)="open(item)">{{ item.title }} <small>- {{ item.date }}</small></a>
       </li>
     </ul>
-    <p *ngIf="items.length === 0">No hay noticias. Añade archivos Markdown en <code>src/assets/content/news</code>.</p>
-  </div>
+    <p *ngIf="items.length === 0" class="empty">No hay noticias. Añade archivos Markdown en <code>src/assets/content/news</code>.</p>
+  </ng-container>
 
-  <article *ngIf="content">
-    <h3>{{ title }}</h3>
-    <pre>{{ content }}</pre>
-    <p><a routerLink="/noticias">Volver a la lista</a></p>
-  </article>
+  <ng-template #detail>
+    <article class="news-detail">
+      <h3>{{ title }}</h3>
+      <div [innerHTML]="contentHtml"></div>
+      <p><a routerLink="/noticias">Volver a la lista</a></p>
+    </article>
+  </ng-template>
 </section>
