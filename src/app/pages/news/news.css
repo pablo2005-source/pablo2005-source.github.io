@@ -1,0 +1,4 @@
+.news { padding: 1rem; }
+.news ul { list-style: none; padding: 0; }
+.news li { margin: 0.5rem 0; }
+.news a { cursor: pointer; color: #0b64ff; }

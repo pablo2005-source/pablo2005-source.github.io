@@ -1,0 +1,4 @@
+.projects { padding: 1rem; }
+.projects ul { list-style: none; padding: 0; }
+.projects li { margin: 0.5rem 0; }
+.projects a { cursor: pointer; color: #0b64ff; }

@@ -1,0 +1,18 @@
+<section class="news">
+  <h2>Noticias</h2>
+
+  <div *ngIf="!content">
+    <ul>
+      <li *ngFor="let item of items">
+        <a (click)="open(item)">{{ item.title }} <small>- {{ item.date }}</small></a>
+      </li>
+    </ul>
+    <p *ngIf="items.length === 0">No hay noticias. Añade archivos Markdown en <code>src/assets/content/news</code>.</p>
+  </div>
+
+  <article *ngIf="content">
+    <h3>{{ title }}</h3>
+    <pre>{{ content }}</pre>
+    <p><a routerLink="/noticias">Volver a la lista</a></p>
+  </article>
+</section>
