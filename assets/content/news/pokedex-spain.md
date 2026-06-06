@@ -6,6 +6,8 @@
 
 Mediante inteligencia artificial y visión por computador, los usuarios podrán escanear animales utilizando la cámara de su teléfono y acceder a información detallada sobre cada especie a través de una enciclopedia digital integrada.
 
+![Interfaz móvil de la aplicación](assets/content/news/image/movil.jfif)
+
 ---
 
 ## El Proyecto
@@ -51,6 +53,8 @@ La aplicación estará dividida en dos módulos principales.
 
 El escáner permitirá identificar animales mediante la cámara del dispositivo móvil.
 
+![Águila imperial ibérica](assets/content/news/image/aguila.jfif)
+
 #### Características
 
 * Captura de imágenes desde la cámara.
@@ -69,6 +73,9 @@ Esta funcionalidad se inspira principalmente en la Pokédex mostrada en el anime
 ### Enciclopedia Digital
 
 La enciclopedia será el núcleo informativo de la aplicación.
+
+![Nutria paleártica](assets/content/news/image/nutria.jfif)
+![Lobo ibérico](assets/content/news/image/lobo.jfif)
 
 #### Características
 
