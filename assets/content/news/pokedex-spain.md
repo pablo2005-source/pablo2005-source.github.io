@@ -8,7 +8,9 @@ Mediante inteligencia artificial y visión por computador, los usuarios podrán 
 
 ![Interfaz móvil de la aplicación](assets/content/news/image/movil.jfif)
 
+
 ---
+
 
 ## El Proyecto
 
@@ -27,7 +29,9 @@ El proyecto permite poner en práctica competencias relacionadas con:
 * Arquitectura de software.
 * Trabajo colaborativo.
 
+
 ---
+
 
 ## Objetivos
 
@@ -43,7 +47,9 @@ La aplicación busca ofrecer una forma sencilla e interactiva de conocer la biod
 
 La idea es recuperar la sensación de descubrimiento y catalogación característica de la Pokédex original, pero aplicada a animales reales.
 
+
 ---
+
 
 ## Cómo Funciona
 
@@ -68,7 +74,9 @@ El escáner permitirá identificar animales mediante la cámara del dispositivo 
 
 Esta funcionalidad se inspira principalmente en la Pokédex mostrada en el anime clásico, donde el dispositivo era capaz de identificar criaturas y proporcionar información de manera automática mediante una voz electrónica característica.
 
+
 ---
+
 
 ### Enciclopedia Digital
 
@@ -99,7 +107,9 @@ Cada ficha podrá incluir:
 * Distribución geográfica.
 * Estado de conservación.
 
+
 ---
+
 
 ## Tecnologías Utilizadas
 
@@ -125,7 +135,9 @@ Aunque el proyecto sigue en desarrollo, las tecnologías previstas incluyen:
 * Interfaces inspiradas en la Pokédex clásica.
 * Diseño centrado en la simplicidad y facilidad de uso.
 
+
 ---
+
 
 ## Público Objetivo
 
@@ -139,7 +151,9 @@ Pokédex Spain está pensado para:
 * Profesores y centros educativos.
 * Cualquier persona interesada en la biodiversidad española.
 
+
 ---
+
 
 ## Estado Actual
 
@@ -153,7 +167,9 @@ Durante esta etapa se están definiendo:
 * La estructura de la base de datos.
 * Las funcionalidades iniciales para la primera versión.
 
+
 ---
+
 
 ## Aprendizajes Esperados
 
